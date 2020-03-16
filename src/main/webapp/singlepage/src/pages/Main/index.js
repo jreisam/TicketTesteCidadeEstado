@@ -21,19 +21,19 @@ class Main extends React.Component {
             ncidades: 0,
             bandeiras: [
                 {
-                    id: 1,
+                    id: 0,
                     img: bandeiraRS
                 },
                 {
-                    id: 2,
+                    id: 1,
                     img: bandeiraSC
                 },
                 {
-                    id: 3,
+                    id: 2,
                     img: bandeiraPN
                 }
             ],
-            bandeirasSelected: 2
+            bandeirasSelected: 1
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -103,13 +103,13 @@ class Main extends React.Component {
             var estados = this.state.estados.map(estado =>
 
                 <ListaEstados key={estado.id} nome={estado.nome} sigla={estado.sigla} populacao={estado.populacao}
-                              nCidades={estado.ncidades}/>
+                              nCidades={estado.nCidades}/>
             );
         }
-
         return (
             <div>
                 <div className="card" style={{width: 18 + 'rem', margin: 15 + 'px'}}>
+
                     <img className="card-img-top" src={this.state.bandeiras[this.state.bandeirasSelected]["img"]}
                          width="100" height="100"/>
                 </div>
