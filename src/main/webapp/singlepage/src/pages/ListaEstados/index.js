@@ -3,22 +3,15 @@ import React from 'react';
 class ListaEstados extends React.Component {
     constructor(props) {
         super(props);
-        this.deleteEstado = this.deleteEstado.bind(this);
-
-        console.log("no construtor: " + this.props);
-    }
-
-    deleteEstado() {
-        this.props.deleteEstado(this.props.estados);
     }
 
     render() {
         return (
-
             <tr>
                 <td>{this.props.nome}</td>
-                <td>{this.props.codNome}</td>
-                <td>{this.props.imgName}</td>
+                <td>{this.props.sigla}</td>
+                <td>{this.props.populacao}</td>
+                <td>{this.props.nCidades}</td>
                 {/*     <td>
                     <button className="btn btn-danger" onClick={this.deleteBcMsg}>Delete</button>
                 </td>*/}
@@ -26,4 +19,5 @@ class ListaEstados extends React.Component {
         );
     }
 }
-export  default ListaEstados;
+
+export default ListaEstados;

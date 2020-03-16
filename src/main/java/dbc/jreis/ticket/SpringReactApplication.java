@@ -1,11 +1,7 @@
 package dbc.jreis.ticket;
 
-import dbc.jreis.ticket.model.Estado;
-import dbc.jreis.ticket.repository.EstadoRepository;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication

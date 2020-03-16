@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor
@@ -20,14 +19,18 @@ public class Estado {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
-    private String codNome;
-    private String imgNome;
+    private String sigla;
+
+    @Transient
+    private long populacao;
+    @Transient
+    private long nCidades;
 
     @OneToMany
-    @JoinColumn(name="ESTADO_ID", referencedColumnName="id")
+    @JoinColumn(name = "ESTADO_ID", referencedColumnName = "id")
     private Set<Cidade> cidades;
 
     public String toJson() {
-        return "{nome: " + nome + ", codNome:" + codNome + ", imgName: " + imgNome + "}";
+        return "{nome: " + nome + ", sigla:" + sigla + ", populacao: " + populacao + "}";
     }
 }

@@ -20,7 +20,10 @@ public class Cidade {
     private long id;
     private String nome;
 
+    @Column(nullable = false)
+    private long populacao;
+
     @Column(name = "ESTADO_ID")
-    private Integer estadoId;
+    private long estadoId;
 
 }

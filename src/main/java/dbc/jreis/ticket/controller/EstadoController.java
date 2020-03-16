@@ -21,6 +21,11 @@ public class EstadoController {
     @GetMapping
     public ResponseEntity<List<Estado>> findAll() {
         List<Estado> response = estadoService.findAll();
+        for (Estado estado : response
+        ) {
+            estado.setPopulacao(estadoService.retornaPopulacaoPorEstado(estado));
+            estado.setNCidades(estadoService.retornaNumCidadesPorEstado(estado));
+        }
         return ResponseEntity.status(HttpStatus.OK)
                 .body(response);
     }
@@ -40,4 +45,6 @@ public class EstadoController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .build();
     }
+
+
 }
