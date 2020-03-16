@@ -21,7 +21,7 @@ Tecnologias usadas:
  H2
  SpringBoot / Maven / JPA / Swagger / Lombok \
  \
-Observações: Foi feito todo o possível nos dois dias que tive disponíveis para a tarefa, algumas implementações não constam devido a isso, e a aplicação back-end + front-end também só não estão rodando juntas devido mesmo motivo. Agradeço desde já a oportunidade.
+Observações: Parte das implementações finais não constam devido o tempo (fiz no fim de semana). 
 -----------------
  João Robson Reis Jr\
  Senior Developer
