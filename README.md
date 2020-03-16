@@ -7,19 +7,18 @@ Projeto teste para a empresa Ticket: Persistir dados de "cidade" / "estado", con
 Para Rodar Local:
 ---------------------            
 A) Rodar Back-End: (http://localhost:8080)
-* Rodar Back-End: Em um Terminal: `{pasta raiz do projeto}> mvn -N io.takari:maven:wrapper` e então `mvnw clean spring-boot:run`.
-* Ou rodar Back-End Build: `{pasta raiz do projeto}> mvn package` e então ` java -jar .\target\DBCjreis-0.0.1-SNAPSHOT.jar`.
+* Diretamente via pacote Java: ` java -jar .\target\DBCjreis-0.0.1-SNAPSHOT.jar`.
+* Ou via  wrapper: `{pasta raiz do projeto}> mvn -N io.takari:maven:wrapper` e então `mvnw clean spring-boot:run`.
 ---------------------
 B) Rodar Front-End: (http://localhost:3000)
-* Em outro Terminal: `{pasta raiz do projeto}> cd .\src\main\webapp\singlepage`,  `npm[ou yarn] install` e então `npm[ou yarn] start`
+* Terminal: `{pasta raiz do projeto}> cd .\src\main\webapp\singlepage`,  `npm[ou yarn] install` e então `npm[ou yarn] start`
 
 * Para visualizar o database: `http://localhost:8080/h2-console`, database: `jdbc:h2:mem:testedb` login `admin` senha `admin` 
 
 * API's (Swagger): `http://localhost:8080/swagger-ui.html#/`
 
 Tecnologias usadas:
- ReactJS / Bootstrap
- H2
+ ReactJS / Bootstrap / H2 /
  SpringBoot / Maven / JPA / Swagger / Lombok \
  \
 Observações: Parte das implementações finais não constam devido o tempo (fiz no fim de semana). 
