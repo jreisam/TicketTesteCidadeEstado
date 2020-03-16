@@ -144,9 +144,6 @@ class Main extends React.Component {
                                     <Form.Control placeholder="100" onChange={this.handleChangeFieldPopulacao}/>
                                 </Form.Group>
                             </Form.Row>
-                            <Form.Group controlId="formGridCheckbox">
-                                <Form.Check type="checkbox" label="Check me out"/>
-                            </Form.Group>
                             <Button variant="primary" type="submit">
                                 Salvar
                             </Button>
