@@ -132,7 +132,7 @@ class Main extends React.Component {
                                                   onChange={this.handleChangeFieldNome}/>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="uf">
-                                    <Form.Label>State</Form.Label>
+                                    <Form.Label>Estado</Form.Label>
                                     <Form.Control as="select" value={this.state.uf} onChange={this.handleChange}>
                                         <option value="rs">Rio Grande do Sul</option>
                                         <option value="sc">Santa Catarina</option>
