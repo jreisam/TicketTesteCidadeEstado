@@ -2,7 +2,7 @@
 Projeto teste para a empresa Ticket: Persistir dados de "cidade" / "estado", considerando suas regras de negócios respectivas, disponibilizando insert em batch e apresentando uma single page no front-end com comportamento também definido pela prova prática designada.
         
         Certifique-se de primeiro ter instalado e configurado as tecnologias seguintes em seu ambiente: 
-        Java, Maven, Maven-Wrapper 
+        Java, Maven, Maven-Wrapper, e em sua IDE o Plugin Lombok.
         
 Para Rodar Local:
 ---------------------            
